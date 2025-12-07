@@ -14,42 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1764100362
+  lastShownTimestamp: 1765131296
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1764100362
+  checkedLastUpdateTimestamp: 1765131296
   lastQOTDResponse:
-    questionId: 245
-    questionText: 'Does this variable get reset when you load a different Scene?
+    questionId: 249
+    questionText: 'Is this valid code?
 
-      <p>private
-      static int score;</p>'
+      <p>Color? myColor = null;</p>'
     answerA: Yes
-    answerB: No
-    answerC: Only when loading the Main Menu
+    answerB: No, myColor is a struct and cannot be null
+    answerC: 
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1764100362
+  lastQotdTimestamp: 1765131296
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
-    topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
-    topLink: blackfriday
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/unityBlackFridayAssetStoreDec25.png
+    topText: Unity Asset Store is still having their BLACK FRIDAY deals!
+    topLink: unityassetstore
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1764100362
+  lastDynamicHeaderTimestamp: 1765131296
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1764100362
+  websiteLatestMessageTimestamp: 1765131296
   websiteLatestVideos:
     videos:
-    - youTubeId: Z_R-gcTuMrI
-      title: TOP 10 NEW Games, Made with Unity! (OCTOBER 2025)
-    - youTubeId: yC6IGLB4ySg
-      title: Make Games FASTER (90% Compilation Speed BOOST!)
-    - youTubeId: 6JDErIMOUjM
-      title: Unity INSIDE Unreal Engine?! WHAT IS GOING ON?!
-    - youTubeId: vB0ApsVWET8
-      title: The BIGGEST Unity Sale of the YEAR! (BLACK FRIDAY 95% OFF!)
-  websiteLatestVideosTimestamp: 1764100362
+    - youTubeId: wAI7TNtW7xM
+      title: How MUCH is your Time WORTH?
+    - youTubeId: c4tyM-o2uJQ
+      title: Make your Console 10X BETTER with this Tool! (50% OFF!)
+    - youTubeId: 2AG3POM9wOs
+      title: What are Unity Building Blocks?
+    - youTubeId: uYkVz724eng
+      title: TOP 10 NEW Tools AND Visuals NOVEMBER 2025!
+  websiteLatestVideosTimestamp: 1765131296
