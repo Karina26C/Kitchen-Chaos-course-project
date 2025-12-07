@@ -143,6 +143,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CounterTopPoint: {fileID: 0}
   kitchenObjectSO: {fileID: 0}
+--- !u!1 &60768559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5954778718565503362, guid: fe148124badc5428eaf786848367be1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 596693639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &60768562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60768559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52927ccb0e72343f99144147b4913245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuttingCounter: {fileID: 1961823300}
 --- !u!1001 &113421117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1172,10 +1191,18 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5954778718565503362, guid: fe148124badc5428eaf786848367be1b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 60768562}
     - targetCorrespondingSourceObject: {fileID: 2235770343081507536, guid: fe148124badc5428eaf786848367be1b,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1889055575}
+    - targetCorrespondingSourceObject: {fileID: 2235770343081507536, guid: fe148124badc5428eaf786848367be1b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1889055576}
   m_SourcePrefab: {fileID: 100100000, guid: fe148124badc5428eaf786848367be1b, type: 3}
 --- !u!1 &607899779 stripped
 GameObject:
@@ -2454,6 +2481,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuttingCounter: {fileID: 1961823300}
   barImage: {fileID: 288655317}
+--- !u!114 &1889055576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889055570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77723b6fc542d456795cb58d881c1f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
 --- !u!1 &1915755609 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1413542005545291594, guid: 2f39e9dbcbcf44d1c8a588940ffda81f,
