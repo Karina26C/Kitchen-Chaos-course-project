@@ -5,16 +5,22 @@ using UnityEngine.UI;
 
 public class ProgressBarUI : MonoBehaviour
 {
-    [SerializeField] private CuttingCounter cuttingCounter;
+    [SerializeField] private GameObject hasProgressGameObject;
     [SerializeField] private Image barImage;
+    private IhasProgress hasProgress;
     private void Start()
     {
-        cuttingCounter.OnProgressChanged += CuttingCounter_OnProgressChanged;
+        hasProgress = hasProgressGameObject.GetComponent<IhasProgress>();
+        if(hasProgress == null)
+        {
+            Debug.LogError("Game object" + hasProgressGameObject + "does not... haves chka");
+        }
+        hasProgress.OnProgressChanged += HasProgress_OnProgressChanged;
         barImage.fillAmount = 0f;
         Hide();
     }
 
-    private void CuttingCounter_OnProgressChanged(object sender, CuttingCounter.OnProggressEventArgs e)
+    private void HasProgress_OnProgressChanged(object sender, IhasProgress.OnProgressChangedEventArgs e)
     {
         barImage.fillAmount = e.progressNormalized;
         if(e.progressNormalized == 0f || e.progressNormalized == 1f)
