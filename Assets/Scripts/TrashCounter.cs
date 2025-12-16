@@ -9,6 +9,7 @@ public class TrashCounter : BaseCounter
     {
         if (player.HasKitchenObject())
         {
+            //Added a comment
             player.GetKitchenObject().DestroySelf();
         }
     }
