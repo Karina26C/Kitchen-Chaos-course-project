@@ -7,9 +7,6 @@ public class TrashCounter : BaseCounter
     private KitchenObjectSO KitchenObjectSO;
     public override void Interact(Player player)
     {
-        if (player.HasKitchenObject())
-        {
-            player.GetKitchenObject().DestroySelf();
-        }
+       
     }
 }
