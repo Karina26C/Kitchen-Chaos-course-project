@@ -17,7 +17,7 @@ public class CuttingCounter : BaseCounter, IhasProgress
         if (!HasKitchenObject())
         {
             // There is no KitchenObject here
-            if (player.HasKitchenObject())
+            if (player.HasKitchenObject()) 
             {   
                 if (HasRecipeWithInput(player.GetKitchenObject().GetKitchenObjectSO()))
                 {
