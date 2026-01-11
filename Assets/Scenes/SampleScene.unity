@@ -211,6 +211,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b09b785e922394ae2ba3d8e97ce8d424, type: 3}
+--- !u!1 &49158114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 303207756749107579, guid: fe148124badc5428eaf786848367be1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1069943285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &55533382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -219,6 +225,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 223746501}
     m_Modifications:
+    - target: {fileID: 4810447332028819355, guid: b7d951da1b1a843e487a8e4e51d15a32,
+        type: 3}
+      propertyPath: platesCounter
+      value: 
+      objectReference: {fileID: 1081707220}
+    - target: {fileID: 4810447332028819355, guid: b7d951da1b1a843e487a8e4e51d15a32,
+        type: 3}
+      propertyPath: counterTopPoint
+      value: 
+      objectReference: {fileID: 1535827626}
+    - target: {fileID: 4810447332028819355, guid: b7d951da1b1a843e487a8e4e51d15a32,
+        type: 3}
+      propertyPath: plateVisualPrefab
+      value: 
+      objectReference: {fileID: 5730557104393364071, guid: 806e5daa843fa49ac81dbd5ed12f0783,
+        type: 3}
     - target: {fileID: 6402706618369219911, guid: b7d951da1b1a843e487a8e4e51d15a32,
         type: 3}
       propertyPath: m_Name
@@ -518,6 +540,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CounterTopPoint: {fileID: 0}
   kitchenObjectSO: {fileID: 0}
+--- !u!1 &159411448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159411450}
+  - component: {fileID: 159411449}
+  m_Layer: 0
+  m_Name: DeliveryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &159411449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159411448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0fb20cbddc645e5b1537c59f9b17f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeListSO: {fileID: 11400000, guid: af5c8529f7acb4c36bd07cdc4c651f46, type: 2}
+--- !u!4 &159411450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159411448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.020672, y: 1.2594995, z: -0.4429798}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173206172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1413542005545291594, guid: 2f39e9dbcbcf44d1c8a588940ffda81f,
@@ -2781,6 +2848,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1681011391}
   m_SourcePrefab: {fileID: 100100000, guid: fe148124badc5428eaf786848367be1b, type: 3}
+--- !u!114 &1081707220 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5018857265173528697, guid: b7d951da1b1a843e487a8e4e51d15a32,
+    type: 3}
+  m_PrefabInstance: {fileID: 55533382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dc67554753644e6bab2709f6993029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1120943807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1676766545498599319, guid: 77a377144ddab4a429f37bc6b809f763,
@@ -2843,7 +2922,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1069943285}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 49158114}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9110400a361d84453b5c0dfa740b1c79, type: 3}
@@ -3490,6 +3569,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1769864452}
   m_SourcePrefab: {fileID: 100100000, guid: 2f39e9dbcbcf44d1c8a588940ffda81f, type: 3}
+--- !u!4 &1535827626 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7032892037006141730, guid: b7d951da1b1a843e487a8e4e51d15a32,
+    type: 3}
+  m_PrefabInstance: {fileID: 55533382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1635159095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3614,7 +3699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca3d7fa6e17a466499f484bc4224bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasProgressGameObject: {fileID: 0}
+  hasProgressGameObject: {fileID: 49158114}
   barImage: {fileID: 1966367394}
 --- !u!4 &1700754036 stripped
 Transform:
@@ -3985,7 +4070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca3d7fa6e17a466499f484bc4224bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasProgressGameObject: {fileID: 0}
+  hasProgressGameObject: {fileID: 1946156045}
   barImage: {fileID: 288655317}
 --- !u!114 &1889055576
 MonoBehaviour:
@@ -4092,13 +4177,19 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1638674699}
   m_SourcePrefab: {fileID: 100100000, guid: 1c5dda3c7cd3cf742afcade5419faeab, type: 3}
+--- !u!1 &1946156045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 303207756749107579, guid: fe148124badc5428eaf786848367be1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 596693639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1961823300 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8372204110011708544, guid: fe148124badc5428eaf786848367be1b,
     type: 3}
   m_PrefabInstance: {fileID: 596693639}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1946156045}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9110400a361d84453b5c0dfa740b1c79, type: 3}
@@ -4609,3 +4700,4 @@ SceneRoots:
   - {fileID: 268100357}
   - {fileID: 992137843}
   - {fileID: 223746501}
+  - {fileID: 159411450}
