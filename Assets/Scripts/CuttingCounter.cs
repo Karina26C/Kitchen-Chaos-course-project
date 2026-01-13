@@ -5,6 +5,8 @@ using System;
 
 public class CuttingCounter : BaseCounter, IhasProgress
 {
+    public static event EventHandler OnAnyCut;
+
     public event EventHandler<IhasProgress.OnProgressChangedEventArgs> OnProgressChanged;
     
     public event EventHandler OnCut;
@@ -65,6 +67,7 @@ public class CuttingCounter : BaseCounter, IhasProgress
         {
             cuttingProgress++;
             OnCut?.Invoke(this, EventArgs.Empty);
+            OnAnyCut?.Invoke(this, EventArgs.Empty);
             CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(GetKitchenObject().GetKitchenObjectSO());
             OnProgressChanged?.Invoke(this, new IhasProgress.OnProgressChangedEventArgs
             {
