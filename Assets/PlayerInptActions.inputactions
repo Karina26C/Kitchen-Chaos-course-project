@@ -44,18 +44,7 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "44b28cb5-6384-4af0-8b00-ba890705ce88",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "2D Vector",
+                    "name": "WASD",
                     "id": "df84277b-623d-4ad5-816e-070c22568d5f",
                     "path": "2DVector",
                     "interactions": "",
@@ -178,7 +167,7 @@
                 {
                     "name": "",
                     "id": "f098b5e8-3be8-4f8b-a5a1-eb40af3a40bb",
-                    "path": "<Keyboard>/#(F)",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
