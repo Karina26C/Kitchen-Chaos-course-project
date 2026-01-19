@@ -13,6 +13,7 @@ public class GameInput : MonoBehaviour
     public event EventHandler OnInteractAction;
     public event EventHandler OnInteractAlternateAction;
     public event EventHandler onPauseAction;
+    public event EventHandler OnBindingRebind;
 
 
     public enum Binding
@@ -144,16 +145,19 @@ public class GameInput : MonoBehaviour
                 break;
         }
 
-      inputAction.PerformInteractiveRebinding(bindingIndex)
-        .OnComplete(callback =>
-        {
-            callback.Dispose();
-            playerInputActions.Player.Enable();
-            onActionRebound();
+        inputAction.PerformInteractiveRebinding(bindingIndex)
+          .OnComplete(callback =>
+          {
+              callback.Dispose();
+              playerInputActions.Player.Enable();
+              onActionRebound();
 
-            PlayerPrefs.SetString(PLAYER_PEFS_BIDINGS, playerInputActions.SaveBindingOverridesAsJson());
-            PlayerPrefs.Save();
-        })
-        .Start();
+              PlayerPrefs.SetString(PLAYER_PEFS_BIDINGS, playerInputActions.SaveBindingOverridesAsJson());
+              PlayerPrefs.Save();
+
+              OnBindingRebind?.Invoke(this, EventArgs.Empty);
+          })
+          .Start();
     }
 }
+  
