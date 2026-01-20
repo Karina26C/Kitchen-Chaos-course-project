@@ -278,7 +278,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CounterTopPoint: {fileID: 4428749744225928478}
-  cuttingRecipeSOArray: []
+  cuttingRecipeSOArray:
+  - {fileID: 11400000, guid: 6452217965ac14479b599aa9513fc6af, type: 2}
+  - {fileID: 11400000, guid: 3b9763bd36e89497681b2c77f696a9a4, type: 2}
+  - {fileID: 11400000, guid: 807d1f41848154bf4a2b46c7041c7398, type: 2}
 --- !u!4 &4400987775814147970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3924653567918474358, guid: e0f989daf4161401981829e8767161ac,
@@ -373,6 +376,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4400987775814147970}
     m_Modifications:
+    - target: {fileID: 783316643411492370, guid: e0e187dc45a47497c9d3ccf82344e8db,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998676052125081596, guid: e0e187dc45a47497c9d3ccf82344e8db,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3888263503965265258, guid: e0e187dc45a47497c9d3ccf82344e8db,
         type: 3}
       propertyPath: m_Pivot.x
@@ -456,7 +469,7 @@ PrefabInstance:
     - target: {fileID: 3888263503965265258, guid: e0e187dc45a47497c9d3ccf82344e8db,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3888263503965265258, guid: e0e187dc45a47497c9d3ccf82344e8db,
         type: 3}
